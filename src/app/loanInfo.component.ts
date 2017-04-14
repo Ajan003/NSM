@@ -15,7 +15,7 @@ export class LoanInfoComponent implements OnInit {
   public loanForm:any = {
   };
   next() {
-  	if (!this.loanForm.totalAmount || !this.loanForm.downpayment || !this.loanForm.tenure || !this.loanForm.interestRate) {
+  	if (!this.loanForm.totalValue || !this.loanForm.totalAmount || !this.loanForm.downpayment || !this.loanForm.tenure || !this.loanForm.interestRate) {
   		window.alert("Please fill the mandatory fields in the form!");
   		window.scrollTo(0, 0);
   	} else {

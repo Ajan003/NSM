@@ -20,12 +20,17 @@
   <label >PAN Number<span class="mandatory">*</span> :</label>
   <input type="text" [(ngModel)]="borrowerForm.pan" class="form-control" >
 </div>
+<div class="form-group col-xs-10 col-md-6 col-lg-6">
+  <label >Aadhaar Number:</label>
+  <input type="text" [(ngModel)]="borrowerForm.aadhaar" class="form-control" >
+</div>
 </div>
 <div class="row">
 <div class="form-group col-xs-10 col-md-6 col-lg-6">
   <label >Employment Type:</label>
   <select [(ngModel)]="borrowerForm.empType" class="form-control" >
-  <option value="salaried">Salaried</option>
+  <option value="salariedGovt">Salaried - Government</option>
+  <option value="salariedPvt">Salaried - Private</option>
   <option value="business">Business</option>
   </select>
 </div>

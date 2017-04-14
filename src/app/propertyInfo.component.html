@@ -13,6 +13,13 @@
 </div>
 <div class="row">
 <div class="form-group col-xs-10 col-md-6 col-lg-6">
+  <label >Property Type:</label>
+  <select [(ngModel)]="propertyForm.propType" class="form-control" >
+  <option value="plot">Plot</option>
+  <option value="flat">Flat</option>
+  </select>
+</div>
+<div class="form-group col-xs-10 col-md-6 col-lg-6">
   <label >Property Total Size<span class="mandatory">*</span> :</label> In Sqft
   <input type="text" [(ngModel)]="propertyForm.size" class="form-control" >
 </div>
